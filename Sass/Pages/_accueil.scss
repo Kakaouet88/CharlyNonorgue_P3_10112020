@@ -1,0 +1,25 @@
+.restaurants{
+    background-color: $bg_light;
+    padding: 30px 15px 50px 15px;
+}
+
+.localisation{
+    background-color: $bg_dark;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 0px;
+    & i{
+        padding-right: 25px;
+    }
+}
+
+.réservez{
+    background-color: $bg_light;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

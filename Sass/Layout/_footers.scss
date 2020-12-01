@@ -1,0 +1,26 @@
+.footerrestaurants, .footeracc{
+    background-color: $bg_footer;
+    padding: 20px;
+    & a{
+        color: white;
+    }
+    .fa-hands-helping {
+        margin-right: 12px;
+    }
+    .fa-utensils{
+        margin-right: 19px;
+    }
+    &_img{
+        filter: invert(1);
+        height: 20px;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+.footer{
+    &_img{
+        filter: invert(1);
+        height: 20px;
+        margin: 10px 0px 10px 0px;
+    }
+}

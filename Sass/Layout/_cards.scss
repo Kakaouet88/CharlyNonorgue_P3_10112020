@@ -1,0 +1,56 @@
+.card{
+    background-color: $bg_card;
+    @include card-shadow;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    &_legend{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        &_heart{
+            align-self: center;
+            padding-right: 10px;
+            font-size: 25px;
+            z-index: 90;
+        }
+        & h3, & p {
+            margin: 5px;
+        }
+    }
+    &_image{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 280px;
+        border-radius: 20px 20px 0px 0px;
+        .card_tag{
+            background-color: $color-tertiary;
+            color: darken($color: $color-tertiary, $amount: 40);
+            padding: 5px;
+            margin: 20px;
+            align-self: flex-start;
+        }
+    }
+    #ledelicedessens{
+        background-image: url(../../Public/images/restaurants/ledelicedessens.jpg);
+        background-size: 105%;
+        background-position-y: -40px;
+    }
+    #alafrancaise{
+        background-image: url(../../Public/images/restaurants/alafrancaise.jpg);
+        background-size: 115%;
+        background-position-y: -60px;
+        background-position-x: -50px;
+    }
+    #lanoteenchantee{
+        background-image: url(../../Public/images/restaurants/lanoteenchantee.jpg);
+        background-size: 100%;
+        background-position-y: -180px;
+    }
+    #lapalettedugout{
+        background-image: url(../../Public/images/restaurants/lapalettedugout.jpg);
+        background-size: 105%;
+        background-position-y: -20px;
+    }
+}

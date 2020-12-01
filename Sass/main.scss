@@ -1,3 +1,10 @@
-@import 'base/colors';
+@import 'utils/variables';
 @import 'base/fonts';
-
+@import 'utils/mixins';
+@import 'layout/headers';
+@import 'layout/link';
+@import 'base/body';
+@import 'layout/footers';
+@import 'layout/cards';
+@import 'pages/accueil';
+@import 'Components/bouton';
