@@ -1,13 +1,13 @@
 .réservez_btn{
     @include bouton;
-    width: 180px;
+    width: 200px;
 }
 
 .commander{
     @include bouton;
     display: flex;
     justify-content: center;
-    width: 150px;
+    width: 130px;
     &_btn{
         background: none;
         border: none;

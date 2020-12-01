@@ -5,6 +5,7 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    transition: all 200ms;
     &_legend{
         padding: 15px;
         display: flex;
@@ -52,5 +53,14 @@
         background-image: url(../../Public/images/restaurants/lapalettedugout.jpg);
         background-size: 105%;
         background-position-y: -20px;
+    }
+}
+
+.card{
+    &:hover{
+        transform: scale(1.02);
+    }
+    &:active{
+        transform: scale(1.02);
     }
 }

@@ -1,6 +1,30 @@
 .restaurants{
     background-color: $bg_light;
     padding: 30px 15px 50px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    &_title{
+        width: 100%;
+        text-align: left;
+    }
+
+    .cardlink_card{
+        margin: 30px 30px 10px 30px;
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .cardlink_card{
+        min-width: 600px;
+        min-height: 350px;
+    }
+    .restaurants_title{
+        text-align: center;
+    }
 }
 
 .localisation{
@@ -22,4 +46,90 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 50px 10px;
+    position: relative;
+    &_title{
+        align-self: flex-start;
+    }
+    @media screen and (min-width: 580px) {
+        &_title{
+            align-self: center;
+        }
+    }
+
+    & p{
+        font-weight: bold;
+    }
+
+    .étapes{
+        display: flex;
+        justify-content: left;
+        background-color: $bg_light;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 20px 30px 20px;
+        box-shadow: lighten($color: $shadow, $amount: 12) 0px 1px 20px;
+        position: relative;
+        z-index: 1;
+        transition: all 200ms;
+        width: 350px;
+        min-width: 300px;
+        &:hover{
+            transform: scale(1.02);
+            &::after{
+                opacity: 1;
+            }
+            & .étapes_txt i{
+                color: $color-primary;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: lighten($color-primary, 35);
+            z-index: -1;
+            opacity: 0;
+            border-radius: 20px;
+            transition: opacity 300ms;
+        }
+        &_puce{
+            padding: 2px;
+            background-color: $color-primary;
+            border-radius: 20px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            color: $bg_card;
+            font-weight: normal;
+            position: absolute;
+            left: -10px;
+        }
+        &_txt i{
+            margin-right: 50px;
+            color: darken($shadow, 20);
+        }
+        &_txt{
+            margin-left: 50px;
+        }
+
+        .fa-mobile-alt{
+            font-size: 20px;
+        }
+        .fa-list-ul{
+            font-size: 18px;
+        }
+        .fa-store{
+            font-size: 16px;
+        }
+    }
 }
