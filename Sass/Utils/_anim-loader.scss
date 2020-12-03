@@ -1,0 +1,35 @@
+@keyframes loader-bg{
+    0%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes loader-spinner{
+    0%{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    30%{
+        transform: scale(.9);
+        opacity: .7;
+    }
+    60%{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    80%{
+        transform: scale(.9);
+        opacity: .7;
+        animation-timing-function: ease-in;
+    }
+    100%{
+        transform: scale(30);
+        opacity: 0;
+    }
+}
