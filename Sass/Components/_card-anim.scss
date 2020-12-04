@@ -1,0 +1,55 @@
+.cards_card{
+    &_txt{
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-areas:
+        "title ."
+        "txt price";
+        grid-template-columns: auto auto;
+        flex: 1;
+        & p:nth-child(1){
+            grid-area: title;
+        }
+        & p:nth-child(2){
+            grid-area: txt;
+        }
+        & p:nth-child(3){
+            grid-area: price;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    & .check{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        background-color: $color-tertiary;
+        border-radius: 0px 20px 20px 0px;
+        color: white;
+        font-size: 20px;
+        position: relative;
+        transition: all ease-out 300ms;
+        border-radius: 0px 20px 20px 0px;
+        opacity: 0;
+        .fa-check-circle{
+            position: absolute;
+            left: 35%;
+            transform: rotate(-1turn);
+            transition: transform 300ms ease-out;
+        }
+    }
+    &:hover{
+        .check{
+            width: 18%;
+            opacity: 1;
+        .fa-check-circle{
+            transform: rotate(0turn);
+        }
+        }
+
+    }
+}
