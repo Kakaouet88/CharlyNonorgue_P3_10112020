@@ -9,12 +9,6 @@
         padding: 15px;
         display: flex;
         justify-content: space-between;
-        &_heart{
-            align-self: center;
-            padding-right: 10px;
-            font-size: 25px;
-            z-index: 90;
-        }
         & h3, & p {
             margin: 5px;
         }

@@ -1,0 +1,42 @@
+.menu_header .fa-heart{
+    position: absolute;
+    transition: opacity 500ms ease-in-out;
+    padding-right: 2px;
+    cursor: pointer;
+}
+
+.card_legend_heart{
+    position: relative;
+& .fa-heart{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transition: opacity 500ms ease-in-out;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    align-self: center;
+    font-size: 25px;
+    z-index: 90;
+}
+}
+
+.heartgradient{
+    opacity: 0;
+    background: linear-gradient($color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heart{
+    &:hover, &:active{
+        .heartempty{
+            opacity: 0;
+        }
+        .heartgradient{
+            opacity: 1;
+        }
+    }
+}
+
