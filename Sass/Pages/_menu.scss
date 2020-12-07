@@ -1,23 +1,37 @@
 .background{
     &_lanoteenchantee{
-    background-image: url(../../Public/images/restaurants/lanoteenchantee.jpg);
-    background-size: 100%;
-    background-position-y: -80px;
+    background-image: url(./images/restaurants/lanoteenchantee.jpg);
+    background-size: cover;
+    background-position-y: -90px;
     }
     &_alafrancaise{
-        background-image: url(../../Public/images/restaurants/alafrancaise.jpg);
-        background-size: 100%;
-        background-position-y: 30px;
+        background-image: url(./images/restaurants/alafrancaise.jpg);
+        background-size: cover;
+        background-position-y: 0px;
     }
     &_lapalettedugout{
-        background-image: url(../../Public/images/restaurants/lapalettedugout.jpg);
-        background-size: 100%;
-        background-position-y: 30px;
+        background-image: url(./images/restaurants/lapalettedugout.jpg);
+        background-size: cover;
+        background-position-y: 0px;
     }
     &_ledelicedessens{
-        background-image: url(../../Public/images/restaurants/ledelicedessens.jpg);
-        background-size: 100%;
-        background-position-y: 30px;
+        background-image: url(./images/restaurants/ledelicedessens.jpg);
+        background-size: cover;
+        background-position-y: 0px;
+    }
+    @media screen and (min-width: 580px) {
+        &_lapalettedugout{
+            background-position-y: -360px;
+        }
+        &_lanoteenchantee{
+            background-position-y: -300px;
+        }
+        &_ledelicedessens{
+            background-position-y: -400px;
+        }
+        &_alafrancaise{
+            background-position-y: -410px;
+        }
     }
 }
 

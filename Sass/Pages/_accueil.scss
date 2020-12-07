@@ -4,24 +4,21 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     &_title{
         width: 100%;
         text-align: left;
     }
 
     .cardlink_card{
-        margin: 30px 30px 10px 30px;
+        margin: 30px 0px 10px 0px;
         height: 300px;
-        width: 350px;
+        max-width: 500px;
+        width: 80vw;
     }
 }
 
 @media screen and (min-width: 580px) {
-    .cardlink_card{
-        min-width: 600px;
-        min-height: 350px;
-    }
     .restaurants_title{
         text-align: center;
     }
@@ -54,6 +51,7 @@
     align-items: center;
     padding: 20px 10px 50px 10px;
     position: relative;
+    width: 100%;
     &_title{
         align-self: flex-start;
     }
@@ -78,7 +76,9 @@
         position: relative;
         z-index: 1;
         transition: all 200ms;
-        width: 300px;
+        width: 30vw;
+        min-width: 330px;
+        max-width: 400px;
         &:hover{
             transform: scale(1.02);
             &::after{
@@ -131,4 +131,21 @@
             font-size: 16px;
         }
     }
+}
+
+#ledelicedessens{
+    background-image: url(./images/restaurants/ledelicedessens.jpg);
+    background-size: cover;
+}
+#alafrancaise{
+    background-image: url(./images/restaurants/alafrancaise.jpg);
+    background-size: cover;
+}
+#lanoteenchantee{
+    background-image: url(./images/restaurants/lanoteenchantee.jpg);
+    background-size: cover;
+}
+#lapalettedugout{
+    background-image: url(./images/restaurants/lapalettedugout.jpg);
+    background-size: cover;
 }

@@ -1,6 +1,6 @@
 .menu_header .fa-heart{
     position: absolute;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-out;
     padding-right: 2px;
     cursor: pointer;
 }
@@ -11,7 +11,7 @@
     position: absolute;
     right: 10px;
     top: 20px;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-out;
     cursor: pointer;
     margin: 0px;
     padding: 0px 0px 0px 0px;

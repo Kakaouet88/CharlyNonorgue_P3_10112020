@@ -1,9 +1,10 @@
-@import 'utils/variables';
+@import 'base/body';
 @import 'base/fonts';
+@import 'utils/variables';
 @import 'utils/mixins';
 @import 'layout/headers';
 @import 'layout/link';
-@import 'base/body';
+
 @import 'layout/footers';
 @import 'layout/cards';
 @import 'pages/accueil';
