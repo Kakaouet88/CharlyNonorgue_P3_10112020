@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Kakaouet88/CharlyNonorgue_P3_10112020/issues"
   },
-  "homepage": "https://github.com/Kakaouet88/CharlyNonorgue_P3_10112020#readme"
+  "homepage": "https://github.com/Kakaouet88/CharlyNonorgue_P3_10112020#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

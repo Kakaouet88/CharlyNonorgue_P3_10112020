@@ -16,7 +16,8 @@
     &_image{
         display: flex;
         flex-direction: row-reverse;
-        height: 280px;
+        max-height: 280px;
+        height: 40vw;
         border-radius: 20px 20px 0px 0px;
         .card_tag{
             background-color: $color-tertiary;

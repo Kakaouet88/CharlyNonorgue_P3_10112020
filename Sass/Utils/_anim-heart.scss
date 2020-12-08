@@ -2,7 +2,7 @@
     .heart{
         position: relative;
         padding: 12px;
-        margin: 0px 10px 0px 10px;
+        margin-left: 15px;
     }
     .fa-heart{
         position: absolute;
@@ -11,7 +11,6 @@
         left: 0px;
         right: 0px;
         transition: opacity 500ms ease-out;
-        padding-right: 2px;
         cursor: pointer;
     }
 }
