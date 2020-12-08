@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     &_title{
-        width: 100%;
+        width: 98%;
         text-align: left;
     }
 
@@ -16,11 +16,11 @@
         max-height: 300px;
         min-height: 210px;
         max-width: 500px;
-        width: 80vw;
+        width: 90vw;
     }
 }
 
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 800px) {
     .restaurants_title{
         text-align: center;
     }
@@ -51,9 +51,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 10px 50px 10px;
+    padding: 20px 0px 50px 0px;
     position: relative;
-    width: 100%;
+    margin: 0px;
+    width: 98%;
     &_title{
         align-self: flex-start;
     }
