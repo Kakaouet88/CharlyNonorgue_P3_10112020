@@ -1,6 +1,6 @@
 .restaurants{
     background-color: $bg_light;
-    padding: 30px 15px 50px 15px;
+    padding: 30px 10px 50px 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,8 +11,9 @@
     }
 
     .cardlink_card{
-        margin: 30px 0px 10px 0px;
-        height: 300px;
+        margin: 30px 5px 10px 5px;
+        height: 50vw;
+        max-height: 300px;
         max-width: 500px;
         width: 80vw;
     }
@@ -67,7 +68,7 @@
 
     .étapes{
         display: flex;
-        justify-content: left;
+        justify-content: space-around;
         background-color: $bg_light;
         border-radius: 20px;
         padding: 10px;
@@ -77,8 +78,8 @@
         z-index: 1;
         transition: all 200ms;
         width: 30vw;
-        min-width: 330px;
-        max-width: 400px;
+        min-width: 250px;
+        max-width: 500px;
         &:hover{
             transform: scale(1.02);
             &::after{
@@ -114,11 +115,11 @@
             left: -10px;
         }
         &_txt i{
-            margin-right: 50px;
+            margin-right: 3vw;
             color: darken($shadow, 20);
         }
         &_txt{
-            margin-left: 50px;
+            margin-left: 0px;
         }
 
         .fa-mobile-alt{
