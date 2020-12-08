@@ -1,5 +1,14 @@
-.menu_header .fa-heart{
+.menu_header .heartgradient{
     position: absolute;
+    align-self: center;
+    transition: opacity 500ms ease-out;
+    padding-right: 2px;
+    cursor: pointer;
+}
+
+.menu_header .heartempty{
+    position: absolute;
+    align-self: center;
     transition: opacity 500ms ease-out;
     padding-right: 2px;
     cursor: pointer;
