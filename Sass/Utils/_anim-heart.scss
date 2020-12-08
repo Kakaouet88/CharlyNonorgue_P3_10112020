@@ -1,21 +1,26 @@
-.menu_header .heartgradient{
-    position: absolute;
-    align-self: center;
-    transition: opacity 500ms ease-out;
-    padding-right: 2px;
-    cursor: pointer;
+.menu_header {
+    .heart{
+        position: relative;
+        padding: 12px;
+        margin: 0px 10px 0px 10px;
+    }
+    .fa-heart{
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        transition: opacity 500ms ease-out;
+        padding-right: 2px;
+        cursor: pointer;
+    }
 }
 
-.menu_header .heartempty{
-    position: absolute;
-    align-self: center;
-    transition: opacity 500ms ease-out;
-    padding-right: 2px;
-    cursor: pointer;
-}
+    
 
 .card_legend_heart{
     position: relative;
+
 & .fa-heart{
     position: absolute;
     right: 10px;
@@ -39,6 +44,7 @@
 }
 
 .heart{
+    margin: 0;
     &:hover, &:active{
         .heartempty{
             opacity: 0;
